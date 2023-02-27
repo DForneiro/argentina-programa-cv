@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto</title>
+    <link rel="icon" type="image/x-icon" href="Img/favicon.png">
+    <link rel="stylesheet" href="Stylesheets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Mi Curriculum Vitae</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Experiencia laboral.html">Experiencia Laboral</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Educación.html">Educación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Idiomas.html">Idiomas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="C:\Users\belmo\Desktop\Argentina Programa\contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+      <h1 class="headerh1">Contacto</h1>
+    </header>
+<section class="ofertas-laborales">
+    <div class="container">
+      <h2>Propuestas Laborales</h2>
+      <p>Si tenés una propuesta laboral para hacerme, completa el formulario de contacto y me pondré en contacto con vos a la brevedad.</p>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" class="form-control" id="telefono" name="telefono" required>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="boton">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer id="footer" class="footercv">
+  </footer>
+  
+  <script>
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0');
+    var yyyy = today.getFullYear();
+    
+    var footer = document.getElementById("footer");
+    footer.innerHTML = "© " + yyyy + " - Mi Sitio Web | Fecha actual: " + dd + "/" + mm + "/" + yyyy;
+  </script>
+</body>
