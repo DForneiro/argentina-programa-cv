@@ -13,6 +13,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+ <header>
   <div class="container-fluid">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Mi Curriculum Vitae</a>
@@ -39,9 +40,10 @@
             </ul>
         </div>
     </nav>
-    <header>
       <h1 class="headerh1">Contacto</h1>
     </header>
+
+<main>
 <section class="ofertas-laborales">
     <div class="container">
       <h2>Propuestas Laborales</h2>
@@ -67,17 +69,36 @@
       </form>
     </div>
   </section>
+</main>
 
-  <footer id="footer" class="footercv">
-  </footer>
-  
-  <script>
-    var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0');
-    var yyyy = today.getFullYear();
-    
-    var footer = document.getElementById("footer");
-    footer.innerHTML = "© " + yyyy + " - Mi Sitio Web | Fecha actual: " + dd + "/" + mm + "/" + yyyy;
-  </script>
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <h3>Seguime en redes sociales</h3>
+          <ul class="list-unstyled">
+            <li><a href="https://www.facebook.com/" target="_blank" >Facebook</a></li>
+            <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-center">
+          <h3>Contacto</h3>
+          <ul class="list-unstyled">
+            <li><a href="mailto:juancodigo@gmail.com">Correo electrónico</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=+5491164053454" target="_blank">Teléfono</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-center">
+          <h3>Navegación</h3>
+          <ul class="list-unstyled">
+            <li><a href="../Argentina Programa/index.html">Home</a></li>
+            <li><a href="../Argentina Programa/Experiencia laboral.html">Experiencia Laboral</a></li>
+            <li><a href="../Argentina Programa/Educación.html">Educación</a></li>
+            <li><a href="../Argentina Programa/Idiomas.html">Idiomas</a></li>
+            <li><a href="../Argentina Programa/Contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 </body>

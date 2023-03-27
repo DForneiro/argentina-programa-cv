@@ -64,8 +64,34 @@
   .carousel-item img {
    height: auto;
   }}
-   
-.footercv {
+
+  
+/* Estilos footer*/
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 767px) {
+  #footer .col-md-4 {
+    margin-bottom: 30px;
+  }
+}
+
+/* Estilos para tabletas */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #footer .col-md-4 {
+    margin-bottom: 30px;
+  }
+}
+
+/* Estilos para pantallas medianas y grandes */
+@media screen and (min-width: 992px) {
+  #footer .col-md-4 {
+    margin-bottom: 0;
+  }
+}
+
+/* Estilos para todos los tamaños de pantalla */
+
+.footer {
   background-color: #343a40;
   color: #fff;
   padding: 20px;
@@ -73,10 +99,37 @@
   text-align: center;
 }
 
-@media (max-width: 768px){
-  .footercv {
-   padding: 10px;
-  }}
+#footer h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#footer ul li {
+  margin-bottom: 10px;
+}
+
+#footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer ul li a:hover {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+#footer hr {
+  margin: 40px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: none;
+}
 
   /* Estilos textos y body */
 
@@ -87,9 +140,9 @@
   }
   
   header {
-    background-color: #333;
+    background-color: #fff;
     color: #fff;
-    padding: 8px;
+    padding: 10px 0px 10px 0px;
     text-align: center;
   }
 
